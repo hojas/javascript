@@ -1,0 +1,69 @@
+site_name: 现代 JavaScript 教程中文版
+site_description: 从入门到进阶的完整 JavaScript 学习指南
+site_url: https://hojas.github.io/javascript/
+repo_url: https://github.com/hojas/javascript
+repo_name: hojas/javascript
+
+theme:
+  name: material
+  language: zh-CN
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  - JavaScript 语言:
+    - 1-js/index.md
+    - 入门:
+      - 简介: 1-js/01-getting-started/1-intro/article.md
+      - 手册与规范: 1-js/01-getting-started/2-manuals-specifications/article.md
+      - 代码编辑器: 1-js/01-getting-started/3-code-editors/article.md
+      - 开发者控制台: 1-js/01-getting-started/4-devtools/article.md
+    - 基础:
+      - Hello, world!: 1-js/02-first-steps/1-hello-world/article.md
+      - 代码结构: 1-js/02-first-steps/2-structure/article.md
+      - 现代模式: 1-js/02-first-steps/3-strict-mode/article.md
+      - 变量: 1-js/02-first-steps/4-variables/article.md
+      - 数据类型: 1-js/02-first-steps/5-types/article.md
+      - 类型转换: 1-js/02-first-steps/6-type-conversions/article.md
+      - 基础运算符: 1-js/02-first-steps/7-operators/article.md
+      - 值的比较: 1-js/02-first-steps/8-comparison/article.md
+      - 条件分支: 1-js/02-first-steps/9-if-else/article.md
+      - 逻辑运算符: 1-js/02-first-steps/10-logical-operators/article.md
+      - 空值合并运算符: 1-js/02-first-steps/11-nullish-coalescing-operator/article.md
+      - 循环: 1-js/02-first-steps/12-while-for/article.md
+      - switch 语句: 1-js/02-first-steps/13-switch/article.md
+      - 函数: 1-js/02-first-steps/14-function-basics/article.md
+      - 函数表达式: 1-js/02-first-steps/15-function-expressions/article.md
+      - 箭头函数: 1-js/02-first-steps/16-arrow-functions-basics/article.md
+      - JavaScript 特性: 1-js/02-first-steps/17-javascript-specials/article.md
+  - 浏览器: 2-ui/index.md
+  - 框架与窗口: 3-frames-and-windows/index.md
+  - 二进制数据: 4-binary/index.md
+  - 网络请求: 5-network/index.md
+  - 数据存储: 6-data-storage/index.md
+  - 动画: 7-animation/index.md
+  - Web Components: 8-web-components/index.md
+  - 正则表达式: 9-regular-expressions/index.md
