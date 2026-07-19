@@ -379,8 +379,12 @@ def get_section_index_template(title, articles, section_path):
     """Generate section index.html with links to articles"""
     articles_html = ''
     for article in articles:
+        # Remove section prefix from path for relative links
+        path = article['path']
+        if path.startswith(section_path + '/'):
+            path = path[len(section_path) + 1:]
         articles_html += f'''
-        <a href="{article['path']}" class="article-card">
+        <a href="{path}" class="article-card">
             <h3>{article['title']}</h3>
             <p>{article.get('description', '')}</p>
         </a>'''
